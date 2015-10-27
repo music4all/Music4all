@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#fff8dc"
+    tools:context="music4all.loginscreen.MainScreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. --><![CDATA[
+
+
+    ImageView
+        android:layout_width="60dp"
+        android:layout_height="49dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/m4alogoinv"
+        android:layout_gravity="left|top"
+        android:layout_margin="15dp" />
+
+
+
+    ]]>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewFlipper" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="109dp"
+                android:id="@+id/imageButton4"
+                android:layout_row="30"
+                android:layout_column="0"
+                android:background="#d75600"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/favoritesicon" />
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="109dp"
+                android:id="@+id/imageButton"
+                android:layout_row="30"
+                android:layout_column="0"
+                android:background="#d75600"
+                android:layout_gravity="center_horizontal|bottom"
+                android:src="@drawable/searchicon" />
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="109dp"
+                android:id="@+id/imageButton2"
+                android:layout_row="30"
+                android:layout_column="0"
+                android:background="#d75600"
+                android:layout_gravity="left|bottom"
+                android:src="@drawable/homepageicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView3"
+                android:layout_gravity="left|top"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:enabled="true"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:background="#d75600"
+                android:textColor="#ffffff"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:background="#d75600"
+                android:src="@drawable/settingsicon"
+                android:layout_margin="5dp"
+                android:layout_gravity="right|top" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="15dp"
+                style="@style/Base.Widget.AppCompat.Button.Small"
+                android:enabled="true"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:autoText="true"
+                android:focusableInTouchMode="false"
+                android:linksClickable="false"
+                android:textColorHighlight="#8A3700"
+                android:textColorHint="#8A3700"
+                android:backgroundTint="#ffffff"
+                android:breakStrategy="high_quality"
+                android:clickable="false"
+                android:text="Whales"
+                android:capitalize="words"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+        </FrameLayout>
+    </ViewFlipper>
+
+</FrameLayout>
